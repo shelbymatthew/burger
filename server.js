@@ -11,8 +11,8 @@ var orm = require("./config/orm.js")
 
 // require("./app/routing/apiRoutes")(app);
 // require("./app/routing/htmlRoutes")(app);
-orm.selectWhere()
-
+orm.selectAll()
+orm.insertOne("Cheesy Bacon")
 
 app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
